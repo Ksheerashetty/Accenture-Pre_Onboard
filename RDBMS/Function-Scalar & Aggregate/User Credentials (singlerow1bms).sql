@@ -1,0 +1,4 @@
+SELECT name,
+CONCAT(CONCAT(SUBSTR(name, 1, 2), LENGTH(name)), SUBSTR(phno, -3)) AS USER_PASSWORD
+FROM users
+ORDER BY name DESC;
